@@ -1,0 +1,21 @@
+@startuml
+start
+
+:Mulai;
+:Pilih bungkus kopi;
+if (Bungkus Kopi Tersedia?) then (ya)
+  :Buat desain tas;
+  :Tentukan ukuran tas;
+  :Potong bungkus kopi;
+  :Jahit bagian tas;
+  :Tambahkan aksesori;
+  :Selesaikan tas;
+  :Cek kualitas tas;
+  : masuk gudang;
+  stop
+else (tidak)
+  :Cari bungkus kopi lainnya;
+  stop
+endif
+
+@enduml

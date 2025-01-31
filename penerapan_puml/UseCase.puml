@@ -1,0 +1,19 @@
+@startuml
+actor "Pengrajin" as Pengrajin
+
+Pengrajin --> (Pilih Bungkus Kopi)
+Pengrajin --> (Buat Desain Tas)
+Pengrajin --> (Potong Bungkus Kopi)
+Pengrajin --> (Jahit Bagian Tas)
+Pengrajin --> (Tambahkan Aksesori)
+Pengrajin --> (Selesai dan Cek Tas)
+Pengrajin --> (gudang)
+
+(Pilih Bungkus Kopi) --> (Buat Desain Tas) : Pilih bahan untuk tas
+(Buat Desain Tas) --> (Potong Bungkus Kopi) : Tentukan ukuran bagian tas
+(Potong Bungkus Kopi) --> (Jahit Bagian Tas) : Potong sesuai ukuran desain
+(Jahit Bagian Tas) --> (Tambahkan Aksesori) : Jahit bagian tas
+(Tambahkan Aksesori) --> (Selesai dan Cek Tas) : Finishing dan pengecekan
+(selesai dan cek tas) --> (gudang) : Selesai
+
+@enduml
